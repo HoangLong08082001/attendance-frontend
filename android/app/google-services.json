@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "303780221480",
+    "project_id": "fir-native-83315",
+    "storage_bucket": "fir-native-83315.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303780221480:android:a76c84d9432ad76a561b1d",
+        "android_client_info": {
+          "package_name": "com.apecglobal.attendence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxh8lX_YPwmB1VrVUW3yWR9pSKGynyWgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

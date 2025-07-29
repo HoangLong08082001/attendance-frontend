@@ -1,0 +1,35 @@
+{
+  "cli": {
+    "version": ">= 12.6.2",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "development": {
+      "android": {
+        "buildType": "apk",
+        "distribution": "internal"
+      },
+      "ios": {
+        "releaseChannel": "development"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "releaseChannel": "default"
+      },
+      "ios": {
+        "releaseChannel": "default"
+      }
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "releaseChannel": "preview"
+      },
+      "ios": {
+        "releaseChannel": "preview"
+      }
+    }
+  }
+}

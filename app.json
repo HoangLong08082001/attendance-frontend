@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "ApecGlobal",
+    "slug": "apecglobal",
+    "schema": "",
+    "platforms": ["ios", "android"],
+    "newArchEnabled": true,
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/appstore.png",
+    "userInterfaceStyle": "light",
+    "notification": {
+      "icon": "./assets/LOGO-APECGLOBAL-V.png",
+      "color": "#000000"
+    },
+    "splash": {
+      "image": "./assets/appstore.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.apecglobal.attendence",
+      "buildNumber": "88"
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/appstore.png",
+        "backgroundColor": "#000"
+      },
+      "useNextNotificationsApi": true,
+      "versionCode": "88",
+      "package": "com.apecglobal.attendence",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "NOTIFICATIONS",
+        "RECEIVE_BOOT_COMPLETED",
+        "INTERNET",
+        "WAKE_LOCK",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "expo": {
+      "permissions": ["CAMERA", "CAMERA_ROLL"]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "38144669-ec79-4f0c-bed2-007fe70cf831"
+      }
+    }
+  }
+}
