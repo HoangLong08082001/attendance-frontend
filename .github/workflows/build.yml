@@ -1,0 +1,38 @@
+name: Build iOS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        npm install
+        cd ios
+        pod install
+        cd ..
+
+    - name: Build iOS
+      run: |
+        cd ios
+        xcodebuild -workspace YourProjectName.xcworkspace -scheme YourProjectName -sdk iphoneos -configuration AppStoreDistribution archive -archivePath $PWD/build/YourProjectName.xcarchive
+        xcodebuild -exportArchive -archivePath $PWD/build/YourProjectName.xcarchive -exportOptionsPlist exportOptions.plist -exportPath $PWD/build
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: ios-build
+        path: ios/build
