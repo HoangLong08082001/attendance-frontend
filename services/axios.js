@@ -2,7 +2,7 @@ import axios from "axios";
 import supabase from "./supabaseClient";
 import { ARRAY_CONFIG } from "../constants/variable";
 
-const DEFAULT_BASE_URL = "https://human-resource-backend.vercel.app/api"; // BaseURL mặc định
+const DEFAULT_BASE_URL = "https://attendance-backend-orpin.vercel.app/api"; // BaseURL mặc định
 
 // Hàm lấy baseURL từ Supabase
 const fetchBaseURL = async () => {
